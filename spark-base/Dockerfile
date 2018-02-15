@@ -21,5 +21,3 @@ RUN export PATH=/hadoop/hadoop-2.8.0/bin:$PATH
 
 COPY ./core-site.xml /hadoop/hadoop-2.8.0/etc/hadoop
 COPY ./hdfs-site.xml /hadoop/hadoop-2.8.0/etc/hadoop
-
-ENTRYPOINT ['/bin/bash']
