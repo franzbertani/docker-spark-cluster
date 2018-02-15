@@ -16,6 +16,8 @@ ENV JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk-amd64
 ENV SPARK_HOME /spark/spark-2.2.0-bin-hadoop2.7
 ENV HADOOP_HOME /hadoop/hadoop-2.8.0
 ENV CORE_CONF_fs_defaultFS=hdfs://namenode:8020
+ENV PYSPARK_PYTHON python2.7
+ENV PATH $PATH:$SPARK_HOME/bin
 
 RUN export PATH=/hadoop/hadoop-2.8.0/bin:$PATH
 
